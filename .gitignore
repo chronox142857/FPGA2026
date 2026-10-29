@@ -1,0 +1,12 @@
+build/
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.zip
+__pycache__/
+.metadata/
+*.o
+*.exe
