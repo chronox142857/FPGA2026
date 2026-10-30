@@ -1,0 +1,3 @@
+artifacts/*.bit binary
+# Preserve byte-for-byte original reference files, including legacy encoding.
+reference/** -text
