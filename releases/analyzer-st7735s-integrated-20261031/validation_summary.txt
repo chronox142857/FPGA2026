@@ -1,0 +1,35 @@
+2026-10-31 integrated logic analyzer validation; actual input loopback not yet wired.
+
+integrated_regression_20261031.log
+PASS protocol corpus: 81 checks (UART, I2C, SPI, ambiguity, malformed, noise, undersampling)
+PASS UI render/menu checks; four preview images exported
+PASS tb_capture: 100 acquisitions, ring, sampling, metadata, cancel, validation
+PASS tb_axi: independent AW/W, backpressure, strobes, arm/cancel
+PASS tb_loopback: raw RTL UART/I2C/SPI0..3 captures exported
+PASS tb_tft_pad: SPI/GPIO mux, bidirectional SDA and release
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_uart.hex: status=1 candidates=1 protocol=UART rate=115200
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_i2c.hex: status=1 candidates=1 protocol=I2C rate=100000
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_spi0.hex: status=2 candidates=5 protocol=SPI rate=100000
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_spi1.hex: status=2 candidates=5 protocol=SPI rate=100000
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_spi2.hex: status=2 candidates=6 protocol=SPI rate=100000
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_spi3.hex: status=2 candidates=6 protocol=SPI rate=100000
+PASS RTL UART error injection: 14 frame errors detected
+PASS: STM32 original: 77 init bytes, 100/50/50ms, SCK held high, 32779-byte red frame
+PASS production UI/transport: four real-UART pages, unchanged frame skip, odd-pixel dirty update and timeouts
+PASS integrated page 0: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 1: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 2: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 3: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 4: all 16384 physical SPI pixels match ARM UI
+PASS tb_display: production ARM UI to AXI framebuffer to proven SPI, five pages plus byte-strobe/odd rectangle, busy protection, invalid bounds, original init and 150ms waits
+ALL REQUESTED TESTS PASSED
+
+integrated_reset_display_test_20261031.log
+PASS: STM32 original: 77 init bytes, 100/50/50ms, SCK held high, 32779-byte red frame
+PASS production UI/transport: four real-UART pages, unchanged frame skip, odd-pixel dirty update and timeouts
+PASS integrated page 0: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 1: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 2: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 3: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 4: all 16384 physical SPI pixels match ARM UI
+PASS tb_display: production ARM UI to AXI framebuffer to proven SPI, five pages plus byte-strobe/odd rectangle, busy protection, invalid bounds, original init and 150ms waits

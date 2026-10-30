@@ -1,0 +1,6 @@
+* -text
+*.bit binary
+*.elf binary
+*.hdf binary
+README.md text eol=lf
+.gitattributes text eol=lf

@@ -27,7 +27,23 @@ try {
         if($LASTEXITCODE -ne 0){throw 'Hardware build failed'}
     }
     if($Stage -eq 'Software' -or $Stage -eq 'All') {
-        & "$Sdk/bin/xsct.bat" "$PSScriptRoot/build_sdk.tcl"
-        if($LASTEXITCODE -ne 0){throw 'SDK build failed'}
+        $softwareLog=Join-Path $build 'software-latest.log'
+        & "$Sdk/bin/xsct.bat" "$PSScriptRoot/build_sdk.tcl" *> $softwareLog
+        $softwareExit=$LASTEXITCODE
+        Get-Content -LiteralPath $softwareLog
+        # SDK 2018.2 can return zero even when its Tcl script failed.
+        if($softwareExit -ne 0 -or -not(Select-String -LiteralPath $softwareLog -SimpleMatch 'FIRMWARE_READY=' -Quiet)){
+            throw 'SDK build failed: completion marker missing'
+        }
+    }
+    if($Stage -eq 'Hardware' -or $Stage -eq 'Software' -or $Stage -eq 'All') {
+        $hashLines=foreach($name in @('system.bit','system.hdf','analyzer.elf','analyzer.map')) {
+            $path=Join-Path $build "export/$name"
+            if(Test-Path -LiteralPath $path){
+                $fileHash=Get-FileHash -LiteralPath $path -Algorithm SHA256
+                '{0}  {1}' -f $fileHash.Hash.ToLowerInvariant(),$name
+            }
+        }
+        $hashLines | Set-Content -LiteralPath (Join-Path $build 'export/SHA256SUMS.txt') -Encoding ascii
     }
 } finally {Pop-Location;$env:FPGA2026_ROOT=$previousRoot;& $subst $drive /D}

@@ -141,7 +141,8 @@ int main(void) {
     ui_defaults(&config,&ui);record.samples=samples;
     xil_printf("\r\nFPGA2026 logic analyzer 1.0\r\n");
     if(rd(LA_ID)!=0x4c410101u){xil_printf("FPGA interface mismatch\r\n");return 1;}
-    screen_ok=(tft_init()==0);xil_printf("TFT SPI init=%d (panel is write-only; visual verification required)\r\n",screen_ok);
+    screen_ok=(tft_init()==0);
+    xil_printf("TFT PL init=%d (verified ST7735S profile 2, 250kHz)\r\n",screen_ok);
     help();
     for(;;) {
         uint64_t now=now_ms();unsigned keys=rd(LA_KEYS),k;

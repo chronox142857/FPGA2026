@@ -1,5 +1,9 @@
 # Reference mapping from the supplied ALIENTEK 7010 FPGA examples (Vivado 2020.2).
-# The 24-bit RGB LCD header is repurposed: do NOT attach a parallel RGB panel.
+# RGB LCD signals are repurposed and also exposed on J3 (photo verified).
+# Wire the SPI TFT using J3 ball-name silkscreen; do NOT attach a parallel RGB panel.
+# ST7735S is the backup display. J3 shares these IOs with the RGB LCD connector.
+# A future RGB panel requires moving probes/stimulus to electrically distinct IOs.
+# PACKAGE_PIN values are FPGA balls, not FPC or J3 connector pin numbers.
 # Verify board revision/header numbering/3.3V before connecting or programming.
 create_clock -period 20.000 -name sys_clk [get_ports sys_clk]
 set_property -dict {PACKAGE_PIN U18 IOSTANDARD LVCMOS33} [get_ports sys_clk]
@@ -19,13 +23,13 @@ set_property -dict {PACKAGE_PIN W20 IOSTANDARD LVCMOS33} [get_ports {probe[4]}]
 set_property -dict {PACKAGE_PIN V20 IOSTANDARD LVCMOS33} [get_ports {probe[5]}]
 set_property -dict {PACKAGE_PIN P18 IOSTANDARD LVCMOS33} [get_ports {probe[6]}]
 set_property -dict {PACKAGE_PIN N17 IOSTANDARD LVCMOS33} [get_ports {probe[7]}]
-# LCD_D8..D13 -> SPI TFT (MISO unused, this is NOT I2C).
+# LCD_D8..D13 -> SPI TFT (half-duplex SDA for diagnostics, this is NOT I2C).
 set_property -dict {PACKAGE_PIN V17 IOSTANDARD LVCMOS33 SLEW SLOW DRIVE 8} [get_ports tft_sck]
-set_property -dict {PACKAGE_PIN V18 IOSTANDARD LVCMOS33 SLEW SLOW DRIVE 8} [get_ports tft_mosi]
+set_property -dict {PACKAGE_PIN V18 IOSTANDARD LVCMOS33 SLEW SLOW DRIVE 8 PULLUP TRUE} [get_ports tft_mosi]
 set_property -dict {PACKAGE_PIN T17 IOSTANDARD LVCMOS33 SLEW SLOW DRIVE 8} [get_ports tft_cs_n]
-set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33} [get_ports {tft_ctrl[0]}]
-set_property -dict {PACKAGE_PIN Y18 IOSTANDARD LVCMOS33} [get_ports {tft_ctrl[1]}]
-set_property -dict {PACKAGE_PIN Y19 IOSTANDARD LVCMOS33} [get_ports {tft_ctrl[2]}]
+set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33 SLEW SLOW DRIVE 8} [get_ports {tft_ctrl[0]}]
+set_property -dict {PACKAGE_PIN Y18 IOSTANDARD LVCMOS33 SLEW SLOW DRIVE 8} [get_ports {tft_ctrl[1]}]
+set_property -dict {PACKAGE_PIN Y19 IOSTANDARD LVCMOS33 SLEW SLOW DRIVE 8} [get_ports {tft_ctrl[2]}]
 # LCD_D14..D17 -> optional external-loopback stimulus. Disabled after reset.
 set_property -dict {PACKAGE_PIN P15 IOSTANDARD LVCMOS33} [get_ports {test_io[0]}]
 set_property -dict {PACKAGE_PIN P16 IOSTANDARD LVCMOS33} [get_ports {test_io[1]}]
