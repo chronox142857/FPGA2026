@@ -8,7 +8,8 @@ module st7735s_top #(
     parameter integer Y_OFFSET = (INIT_PROFILE==0)?32:3,
     parameter [7:0] MADCTL = 8'hC8,
     parameter integer POWER_ON_CYCLES = 65536,
-    parameter integer READBACK_ENABLE = 0
+    parameter integer READBACK_ENABLE = 0,
+    parameter integer DISPLAY_TEXT = 1
 ) (
     input wire sys_clk,
     input wire sys_rst_n,
@@ -89,6 +90,15 @@ module st7735s_top #(
         else reset_sync <= {reset_sync[0], power_ready};
     end
 
+    generate if(DISPLAY_TEXT!=0) begin:g_text
+    st7735s_text_demo #(
+        .CLK_HZ(CLK_HZ),.SPI_HALF_CYCLES(SPI_HALF_CYCLES),.INIT_PROFILE(INIT_PROFILE),
+        .X_OFFSET(X_OFFSET),.Y_OFFSET(Y_OFFSET),.MADCTL(MADCTL)) u_text(
+        .clk_50m(sys_clk),.rst_n(app_rst_n),
+        .pause_requests((READBACK_ENABLE!=0) && !read_done),.lcd_init_done(lcd_init_done),.frame_done(),
+        .lcd_rst_n(write_rst_n),.lcd_cs_n(write_cs_n),.lcd_sck(write_sck),
+        .lcd_dc(write_dc),.lcd_mosi(write_mosi),.lcd_bl(write_bl));
+    end else begin:g_color
     st7735s_demo #(
         .CLK_HZ(CLK_HZ), .SPI_HALF_CYCLES(SPI_HALF_CYCLES), .INIT_PROFILE(INIT_PROFILE),
         .X_OFFSET(X_OFFSET), .Y_OFFSET(Y_OFFSET), .MADCTL(MADCTL)
@@ -99,4 +109,5 @@ module st7735s_top #(
         .lcd_sck(write_sck), .lcd_dc(write_dc),
         .lcd_mosi(write_mosi), .lcd_bl(write_bl)
     );
+    end endgenerate
 endmodule

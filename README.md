@@ -10,7 +10,7 @@ AMD 初级组 / 正点原子领航者 ZYNQ7010 / Vivado + SDK 2018.2。
 
 ## 已验证的小屏版本
 
-[ST7735S独立PL例程](examples/st7735s_pl/README.md)保存2026-10-30确认点亮的源码、接线、构建脚本及配套bit/ltx；版本标签`st7735s-fullscreen-20261030`。关键修正为两段150ms等待和窗口偏移2/3，用户确认全屏五色循环、花屏消失。已验证文件位于该例程的`artifacts/`，可直接恢复临时JTAG配置。
+[ST7735S独立PL例程](examples/st7735s_pl/README.md)保存源码、接线、构建脚本及下载文件。当前文字版标签`st7735s-text-20261031`，采用原项目5×7字模，用户确认屏幕已有显示内容；`artifacts/`保存当前文字bit和电脑预览。已验证全屏五色版本仍保留标签`st7735s-fullscreen-20261030`及`artifacts/fullscreen_20261030/`配套bit/ltx。两版共享两段150ms等待和窗口偏移2/3，文字页明确标记DISPLAY TEST / CAPTURE OFF，真实采集数据尚未接入。
 
 ## 快速开始
 

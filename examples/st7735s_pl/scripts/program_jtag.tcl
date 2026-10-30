@@ -14,7 +14,7 @@ if {[catch {
     }
     targets -set -filter {name == "xc7z010"}
     fpga -file $bit
-    puts "LCD_FPGA_LOADED_PL_ONLY: red/green/blue fill test; volatile until power off."
+    puts "LCD_FPGA_LOADED_PL_ONLY: standalone display; volatile until power off."
     disconnect
 } msg opts]} {
     puts stderr "LCD_DOWNLOAD_FAILED: $msg"

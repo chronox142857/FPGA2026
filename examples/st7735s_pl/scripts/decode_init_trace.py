@@ -8,7 +8,7 @@ from statistics import median
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def decode(path, reference, wait_ms=150, x_offset=2, y_offset=3):
+def decode(path, reference, wait_ms=150, x_offset=2, y_offset=3, initial_color=0):
     with path.open(newline='', encoding='utf-8-sig') as handle:
         reader = csv.DictReader(handle)
         columns = reader.fieldnames
@@ -85,6 +85,7 @@ def decode(path, reference, wait_ms=150, x_offset=2, y_offset=3):
     # Keep original C init/pixels; expected geometry is an explicit board profile.
     golden[78:82]=[0x100,0x100+x_offset,0x100,0x100+x_offset+127]
     golden[83:87]=[0x100,0x100+y_offset,0x100,0x100+y_offset+127]
+    golden[88:]=[0x100+(initial_color>>8),0x100+(initial_color&255)]*16384
     assert len(words)>=90, f'Only {len(words)} complete bytes'
     mismatch=[i for i,(a,b) in enumerate(zip(words,golden)) if a!=b]
     assert not mismatch, f'Byte {mismatch[0]} mismatch: got {words[mismatch[0]]:03x}, expected {golden[mismatch[0]]:03x}'
@@ -106,6 +107,7 @@ def decode(path, reference, wait_ms=150, x_offset=2, y_offset=3):
         'event_samples':len(events), 'complete_bytes':len(words), 'trailing_bits':bits,
         'reference_prefix_equal':True, 'initialization_77_bytes_equal':True,
         'window':{'x':[x_offset,x_offset+127],'y':[y_offset,y_offset+127]},
+        'initial_frame_rgb565':f'{initial_color:04x}',
         'reset_low_ms':reset_low/50000,
         'reset_release_to_first_sck_ms':recovery_wait/50000,
         'sleep_out_to_next_select_ms':sleep_wait/50000,
@@ -123,8 +125,9 @@ if __name__=='__main__':
     parser.add_argument('--wait-ms',type=int,default=150,help='50 only for historical original-C captures')
     parser.add_argument('--x-offset',type=int,default=2)
     parser.add_argument('--y-offset',type=int,default=3)
+    parser.add_argument('--initial-color',type=lambda s:int(s,16),default=0,help='0000 for text clear; F800 for color cycle')
     args=parser.parse_args()
-    report=decode(args.trace,ROOT/'build/sim/stm32_wire_stream.hex',args.wait_ms,args.x_offset,args.y_offset)
+    report=decode(args.trace,ROOT/'build/sim/stm32_wire_stream.hex',args.wait_ms,args.x_offset,args.y_offset,args.initial_color)
     out=ROOT/'build/lcd_init_decoded.json'
     out.write_text(json.dumps(report,indent=2),encoding='utf-8')
     print(json.dumps(report,indent=2))

@@ -145,3 +145,15 @@ ILA实采16384点（50MHz），CS低触发，取得40个完整字节，CS/SCK/DC
 当前bit SHA256=`62c3451a80ef6f0d72a94ae9d03e8d716cba6e43b2f360090cdae723c31feb6c`；WNS +11.547ns、WHS +0.041ns，TNS/THS=0；四项debug总线偏斜均MET，最小19.135ns；DRC无错误/严重警告。已验证下载文件、对应源码/约束/脚本和构建参考保存在`verified/st7735s_20261030/`。屏幕寄存器读取保持关闭，没有Flash写入。
 
 本次增量构建复用相同的ILA/VIO IP，使用Vivado2018.2的`reset_run synth_1`并执行正常构建脚本的综合/实现/时序/DRC检查及导出部分；全新环境仍通过`scripts/build.ps1 -DebugLcd`完整重建。
+
+## GitHub保存与文字恢复
+
+用户要求先推送已验证版本，再恢复文字显示。已将五色基线保存至`chronox142857/FPGA2026`的`examples/st7735s_pl/`，提交`1fdfe816773054ff974ff5ea8d91055daf0741a2`，注释标签`st7735s-fullscreen-20261030`。远端main和标签解引用均核对为该提交；bit及原C的暂存对象SHA256与原文件一致，复制后的两套C参考检查通过。主工程原有未提交修改保留，未纳入本次保存。
+
+当前文字开发继续位于本目录，GitHub标签保持为全屏五色基线。新增`st7735s_font5x7.v`和`st7735s_text_demo.v`，从原主工程`firmware/src/ui.c`47个5×7字符字模生成独立ROM，先全屏清黑，再通过已验证矩形接口逐点绘制。标题`LOGIC ANALYZER`、状态`SCREEN READY`，以及FPGA/协议名称、0..7通道、十六进制字符；页面明确标记DISPLAY TEST、CAPTURE OFF，不伪装采集或识别已运行。
+
+`DISPLAY_TEXT=1`为当前默认，0保留五色生成器；初始化、等待、MADCTL、引脚及窗口不因文字模式改变。`test_text.ps1`的LCD GRAM模型从实际SPI字节重建所有像素，与独立按C字体行生成的画布比较：16384像素全部一致，共17788次像素写入（含16384点清屏），日志`build/text_test_run.log`。文字预览已人工目视核查。默认150ms及VIO重启集成测试仍通过，日志`build/text_debug_test.log`。本轮不启用LCD读回。
+
+文字版普通构建通过，bit SHA256=`c021061ffc5c7c1d464985cac410ae1c8b8dd04e34cb2f8f2cc5ea245ae779e5`，WNS +9.478ns、WHS +0.122ns、TNS/THS=0；LUT440、寄存器177、BRAM0、DSP1。DRC无错误/严重警告，六项普通提示为BUFC-1、DPIP-1两项、DPOP-1/2、ZPS7-1。2026-10-30 23:58通过JTAG实际下载，DONE/EOS=1，没有Flash写入；日志`build/text_build_run.log`、`text_program_run.log`。
+
+用户随后反馈“现在屏幕上有东西了”，并要求再次推送GitHub。该反馈确认已有实物显示内容，未额外声称方向、每个字符或颜色均已由用户逐项验收。文字恢复版本另用`st7735s-text-20261031`标签保存，五色`st7735s-fullscreen-20261030`标签保持不变。正常文字bit不带ILA/VIO，不应搭配旧五色debug的ltx；旧资料在GitHub的`artifacts/fullscreen_20261030/`保存。

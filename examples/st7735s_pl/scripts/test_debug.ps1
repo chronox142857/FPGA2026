@@ -7,7 +7,7 @@ $previousArch=$env:PROCESSOR_ARCHITECTURE
 $env:PROCESSOR_ARCHITECTURE='AMD64'
 Push-Location $build
 try {
-    & "$Vivado/bin/xvlog.bat" -d LCD_DEBUG "$root/st7735s_spi_byte.v" "$root/st7735s_driver.v" "$root/st7735s_readback.v" "$root/st7735s_demo.v" "$root/st7735s_top.v" "$root/tb_st7735s_debug.v" "$Vivado/data/verilog/src/glbl.v"
+    & "$Vivado/bin/xvlog.bat" -d LCD_DEBUG "$root/st7735s_spi_byte.v" "$root/st7735s_driver.v" "$root/st7735s_readback.v" "$root/st7735s_demo.v" "$root/st7735s_font5x7.v" "$root/st7735s_text_demo.v" "$root/st7735s_top.v" "$root/tb_st7735s_debug.v" "$Vivado/data/verilog/src/glbl.v"
     if($LASTEXITCODE -ne 0){throw 'Debug simulation compile failed'}
     & "$Vivado/bin/xelab.bat" tb_st7735s_debug glbl -L unisims_ver -s debug_test -timescale 1ns/1ps
     if($LASTEXITCODE -ne 0){throw 'Debug simulation elaboration failed'}

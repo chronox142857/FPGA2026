@@ -12,7 +12,7 @@ module tb_st7735s_top;
     reg [8:0] words [0:20];
     time last_rise = 0;
 
-    st7735s_top #(.CLK_HZ(1000), .POWER_ON_CYCLES(4), .INIT_PROFILE(0),
+    st7735s_top #(.CLK_HZ(1000), .POWER_ON_CYCLES(4), .INIT_PROFILE(0), .DISPLAY_TEXT(0),
         .SPI_HALF_CYCLES(25), .X_OFFSET(0), .Y_OFFSET(32)) dut (
         .sys_clk(clk), .sys_rst_n(rst_n),
         .lcd_rst_n(lcd_rst_n), .lcd_cs_n(lcd_cs_n),
