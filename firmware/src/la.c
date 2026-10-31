@@ -44,8 +44,21 @@ static unsigned uart_alignment(const la_record *r,unsigned ch,uint32_t baud) {
 // Lock framing using three consecutive valid stop bits. A capture may begin
 // inside a byte; treating its first data edge as a start creates plausible junk.
 static uint32_t uart_lock(const la_record *r,unsigned ch,uint32_t baud,uint32_t from,uint32_t *first_fall) {
-    uint32_t i;
+    uint32_t i,high_start=0;
     *first_fall=UINT_MAX;
+    // Ten high bit periods cannot fit inside an 8N1 frame. Prefer the first
+    // start after such an observed idle over plausible data edges at a clipped
+    // capture boundary. The discarded prefix is reported as truncated.
+    for(i=1;i<r->count;i++)if(bit(r,i-1,ch)!=bit(r,i,ch)) {
+        if(bit(r,i,ch))high_start=i;
+        else {
+            if(i>=(from?from:1) && *first_fall==UINT_MAX)*first_fall=i;
+            if(i>=(from?from:1) && (uint64_t)(i-high_start)*baud>=10ull*r->sample_hz)return i;
+        }
+    }
+    // Without a long idle anywhere, retain an observed prefix start so that
+    // malformed streams are not relabelled as valid bytes at another phase.
+    if(*first_fall!=UINT_MAX && bit(r,0,ch) && (uint64_t)(*first_fall+2)*baud>=r->sample_hz)return *first_fall;
     for(i=from?from:1;i<r->count;i++)if(bit(r,i-1,ch) && !bit(r,i,ch)) {
         uint32_t p=i;unsigned n;
         if(*first_fall==UINT_MAX)*first_fall=i;
@@ -54,27 +67,33 @@ static uint32_t uart_lock(const la_record *r,unsigned ch,uint32_t baud,uint32_t 
             if(stop>=r->count || !bit(r,(uint32_t)stop,ch))break;
             if(n==2)return i;
             p+=(uint32_t)(10ull*r->sample_hz/baud);
-            while(p<r->count && !(bit(r,p-1,ch) && !bit(r,p,ch)))p++;
+            {
+                uint32_t next_limit=p+(uint32_t)(10ull*r->sample_hz/baud);
+                // A long idle gap confirms the following start, not a partial
+                // byte before the gap. Do not use later packets to validate it.
+                while(p<r->count && !(bit(r,p-1,ch) && !bit(r,p,ch)) && p<next_limit)p++;
+                if(p>=next_limit)break;
+            }
             if(p>=r->count)break;
         }
     }
     return UINT_MAX;
 }
 void la_decode_uart(const la_record *r,uint8_t ch,uint32_t baud,la_decoded *d) {
-    uint32_t i,lock,first_fall; unsigned align;
+    uint32_t i,lock,first_fall,continued=UINT_MAX; unsigned align;
     init(d,LA_UART);d->candidate.channels[0]=ch;d->candidate.rate=baud;
     if(!channel_ok(r,ch) || baud<9600 || baud>1000000 || r->sample_hz/baud<10) return;
     first_fall=UINT_MAX;
     for(i=1;i<r->count;i++)if(bit(r,i-1,ch) && !bit(r,i,ch)){first_fall=i;break;}
     lock=1;
-    // Preserve a genuine first start with a complete idle bit, including bad
-    // stop bits. Only search framing when the window begins inside a frame.
-    if(first_fall!=UINT_MAX && (!bit(r,0,ch) || (uint64_t)(first_fall+2)*baud<r->sample_hz)) {
+    // A high data run can last nine bits including the stop. Only a full
+    // frame of observed idle establishes a start without framing validation.
+    if(first_fall!=UINT_MAX && (!bit(r,0,ch) || (uint64_t)(first_fall+2)*baud<10ull*r->sample_hz)) {
         uint32_t ignored;
         lock=uart_lock(r,ch,baud,1,&ignored);
         if(lock!=UINT_MAX && first_fall<lock)event(d,0,lock-1,LA_BYTE,LA_TRUNCATED,0,0);
     }
-    for(i=lock==UINT_MAX?1:lock;i<r->count;i++) if(bit(r,i-1,ch) && !bit(r,i,ch)) {
+    for(i=lock==UINT_MAX?1:lock;i<r->count;i++) if(i==continued || (bit(r,i-1,ch) && !bit(r,i,ch))) {
         uint32_t start=i, stop,finish;unsigned value=0,b,flags=0;
         uint64_t stop64=(uint64_t)i+(19ull*r->sample_hz+baud)/(2ull*baud);
         if(stop64>=r->count) {
@@ -91,11 +110,23 @@ void la_decode_uart(const la_record *r,uint8_t ch,uint32_t baud,la_decoded *d) {
         finish=i+(uint32_t)((10ull*r->sample_hz)/baud);
         if(finish>=r->count)finish=r->count-1;
         event(d,start,finish,LA_BYTE,flags,value,0);
+        // A low invalid stop can merge with the following start. Once framing
+        // is locked, retain the known next boundary instead of treating its
+        // first data edge as a new start. Otherwise a single bad stop shifts
+        // every later byte until an idle gap.
+        continued=(flags&LA_FRAME_ERROR) &&
+            (uint64_t)finish+r->sample_hz/(2u*baud)<r->count &&
+            !bit(r,finish,ch) && !bit(r,finish+r->sample_hz/(2u*baud),ch)?finish:UINT_MAX;
         i=finish?finish-1:finish;
     }
     align=uart_alignment(r,ch,baud);
-    if(d->candidate.valid>=3 && d->candidate.valid*100u/(d->candidate.valid+d->candidate.errors)>=95 && align>=85)
-        d->candidate.score=(uint8_t)(60+(d->candidate.valid>10?10:d->candidate.valid)+align/4);
+    if(d->candidate.valid>=3 && d->candidate.valid*100u/(d->candidate.valid+d->candidate.errors)>=95 && align>=85) {
+        unsigned penalty=(lock!=UINT_MAX && first_fall<lock)?
+            (unsigned)((uint64_t)(lock-first_fall)*25u/(r->count-first_fall)):0;
+        // A baud-rate alias must not gain confidence by discarding most of
+        // the waveform before finding a convenient apparent idle/start.
+        d->candidate.score=(uint8_t)(60+(d->candidate.valid>10?10:d->candidate.valid)+align/4-penalty);
+    }
 }
 void la_decode_i2c(const la_record *r,uint8_t scl,uint8_t sda,la_decoded *d) {
     uint32_t i,start=0,byte_start=0,previous_rise=0,period_sum=0,period_count=0,transactions=0;

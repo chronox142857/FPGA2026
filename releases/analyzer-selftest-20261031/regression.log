@@ -1,0 +1,194 @@
+PASS protocol corpus: 81 checks (UART, I2C, SPI, ambiguity, malformed, noise, undersampling)
+PASS UI render/menu checks; four preview images exported
+PASS UART boundary corpus: 12992 windows; every complete decoded byte matches absolute source timing/data/error
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/rtl/la_capture.v" into library work
+INFO: [VRFC 10-311] analyzing module la_capture
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/rtl/la_sample_ram.v" into library work
+INFO: [VRFC 10-311] analyzing module la_sample_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/rtl/la_testgen.v" into library work
+INFO: [VRFC 10-311] analyzing module la_testgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/rtl/la_axi.v" into library work
+INFO: [VRFC 10-311] analyzing module la_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/rtl/la_tft_pad.v" into library work
+INFO: [VRFC 10-311] analyzing module la_tft_pad
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/tests/tb_tft_pad.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_tft_pad
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/tests/tb_capture.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_capture
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/tests/tb_axi.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/tests/tb_loopback.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_loopback
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/fpga/Vivado/2018.2/data/verilog/src/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/fpga/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe tb_capture glbl -L unisims_ver -s tb_capture_sim -timescale 1ns/1ps 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.la_capture(ADDR_WIDTH=5)
+Compiling module work.la_sample_ram(ADDR_WIDTH=5)
+Compiling module work.tb_capture
+Compiling module work.glbl
+Built simulation snapshot tb_capture_sim
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_capture_sim/xsim_script.tcl
+# xsim {tb_capture_sim} -autoloadwcfg -runall
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+run -all
+PASS tb_capture: 100 acquisitions, ring, sampling, metadata, cancel, validation
+$finish called at time : 1014680 ns : File "E:/FPGAproject/FPGA2026/tests/tb_capture.v" Line 98
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 15:46:40 2026...
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/fpga/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe tb_axi glbl -L unisims_ver -s tb_axi_sim -timescale 1ns/1ps 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IOBUF
+Compiling module work.la_capture(ADDR_WIDTH=5)
+Compiling module work.la_sample_ram(ADDR_WIDTH=5)
+Compiling module work.la_testgen_default
+Compiling module work.la_axi(ADDR_WIDTH=5,DEBOUNCE_CYC...
+Compiling module work.tb_axi
+Compiling module work.glbl
+Built simulation snapshot tb_axi_sim
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_axi_sim/xsim_script.tcl
+# xsim {tb_axi_sim} -autoloadwcfg -runall
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+run -all
+PASS tb_axi: independent AW/W, backpressure, strobes, arm/cancel
+$finish called at time : 3840 ns : File "E:/FPGAproject/FPGA2026/tests/tb_axi.v" Line 53
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 15:46:44 2026...
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/fpga/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe tb_loopback glbl -L unisims_ver -s tb_loopback_sim -timescale 1ns/1ps 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.la_testgen_default
+Compiling module work.la_capture_default
+Compiling module work.tb_loopback
+Compiling module work.glbl
+Built simulation snapshot tb_loopback_sim
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_loopback_sim/xsim_script.tcl
+# xsim {tb_loopback_sim} -autoloadwcfg -runall
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+run -all
+PASS tb_loopback: raw RTL UART/I2C/SPI0..3 captures exported
+$finish called at time : 45945840 ns : File "E:/FPGAproject/FPGA2026/tests/tb_loopback.v" Line 40
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 15:46:50 2026...
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/fpga/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe tb_tft_pad glbl -L unisims_ver -s tb_tft_pad_sim -timescale 1ns/1ps 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IOBUF
+Compiling module work.la_tft_pad
+Compiling module work.tb_tft_pad
+Compiling module work.glbl
+Built simulation snapshot tb_tft_pad_sim
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_tft_pad_sim/xsim_script.tcl
+# xsim {tb_tft_pad_sim} -autoloadwcfg -runall
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+run -all
+PASS tb_tft_pad: SPI/GPIO mux, bidirectional SDA and release
+$finish called at time : 400 ns : File "E:/FPGAproject/FPGA2026/tests/tb_tft_pad.v" Line 45
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 15:46:54 2026...
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_uart.hex: status=1 candidates=1 protocol=UART rate=115200
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_i2c.hex: status=1 candidates=1 protocol=I2C rate=100000
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_spi0.hex: status=2 candidates=5 protocol=SPI rate=100000
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_spi1.hex: status=2 candidates=5 protocol=SPI rate=100000
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_spi2.hex: status=2 candidates=6 protocol=SPI rate=100000
+RTL fixture E:\FPGAproject\FPGA2026\build\tests/loop_spi3.hex: status=2 candidates=6 protocol=SPI rate=100000
+PASS RTL UART error injection: 5 frame errors detected
+PASS: STM32 original: 77 init bytes, 100/50/50ms, SCK held high, 32779-byte red frame
+PASS production UI/transport: four real-UART pages, unchanged frame skip, odd-pixel dirty update and timeouts
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/rtl/la_display.v" into library work
+INFO: [VRFC 10-311] analyzing module la_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/examples/st7735s_pl/st7735s_driver.v" into library work
+INFO: [VRFC 10-311] analyzing module st7735s_driver
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/examples/st7735s_pl/st7735s_spi_byte.v" into library work
+INFO: [VRFC 10-311] analyzing module st7735s_spi_byte
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGAproject/FPGA2026/tests/tb_display.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_display
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/fpga/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe tb_display -s tb_display_sim -timescale 1ns/1ps 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.st7735s_spi_byte(HALF_CYCLES=1,L...
+Compiling module work.st7735s_driver(INIT_PROFILE=2,CL...
+Compiling module work.la_display(CLK_HZ=1000,SPI_HALF_...
+Compiling module work.tb_display
+Built simulation snapshot tb_display_sim
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/tb_display_sim/xsim_script.tcl
+# xsim {tb_display_sim} -autoloadwcfg -runall
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+run -all
+PASS integrated page 0: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 1: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 2: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 3: all 16384 physical SPI pixels match ARM UI
+PASS integrated page 4: all 16384 physical SPI pixels match ARM UI
+PASS tb_display: production ARM UI to AXI framebuffer to proven SPI, five pages plus byte-strobe/odd rectangle, busy protection, invalid bounds, original init and 150ms waits
+$finish called at time : 66142920 ns : File "E:/FPGAproject/FPGA2026/tests/tb_display.v" Line 151
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 15:47:05 2026...
+ALL REQUESTED TESTS PASSED

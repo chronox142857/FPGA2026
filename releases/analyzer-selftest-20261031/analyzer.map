@@ -1,0 +1,984 @@
+Archive member included to satisfy reference by file (symbol)
+
+../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+                              (_vector_table)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o) (_boot)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(translation_table.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o) (MMUTable)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o) (FIQInterrupt)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o) (_start)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+                              ./src/main.o (Xil_DCacheDisable)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o) (UndefinedExceptionAddr)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+                              ./src/main.o (xil_printf)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+                              ./src/main.o (usleep)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o) (XTime_SetTime)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o) (__cpu_init)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o) (outbyte)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o) (sleep_A9)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o) (usleep_A9)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o) (XUartLite_SendByte)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+                              ./src/la.o (__aeabi_uidiv)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+                              ./src/main.o (__aeabi_idiv)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+                              e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_ldivmod.o)
+                              ./src/la.o (__aeabi_ldivmod)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+                              ./src/la.o (__aeabi_uldivmod)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+                              e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o) (__ctype_ptr__)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o) (exit)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o) (__libc_fini_array)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                              e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o) (_global_impure_ptr)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o) (__libc_init_array)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+                              ./src/la.o (memcmp)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+                              ./src/tft.o (memcpy)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+                              ./src/la.o (memset)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+                              ./src/ui.o (strchr)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+                              ./src/main.o (strcmp)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+                              ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o) (strlen)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+                              ./src/main.o (strtok)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+                              e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o) (__strtok_r)
+e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+                              e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o) (__call_exitprocs)
+../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+                              e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+UndefinedExceptionAddr
+                    0x4               ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+PrefetchAbortAddr   0x4               ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+DataAbortAddr       0x4               ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ui_pixels           0x8000            ./src/ui.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ps7_ram_0        0x0000000000000000 0x0000000000030000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crti.o
+LOAD e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+                0x0000000000004000                _STACK_SIZE = 0x4000
+                0x0000000000001000                _HEAP_SIZE = 0x1000
+                0x0000000000000400                _ABORT_STACK_SIZE = 0x400
+                0x0000000000000800                _SUPERVISOR_STACK_SIZE = 0x800
+                0x0000000000000400                _IRQ_STACK_SIZE = 0x400
+                0x0000000000000400                _FIQ_STACK_SIZE = 0x400
+                0x0000000000000400                _UNDEF_STACK_SIZE = 0x400
+
+.text           0x0000000000000000     0x6ca4
+ *(.vectors)
+ .vectors       0x0000000000000000      0x12c ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+                0x0000000000000000                _vector_table
+ *(.boot)
+ .boot          0x000000000000012c      0x3b0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+                0x000000000000012c                _prestart
+                0x000000000000012c                _boot
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000000000004dc        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crti.o
+ .text          0x00000000000004dc       0xdc e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+ .text          0x00000000000005b8     0x18c8 ./src/la.o
+                0x0000000000000778                la_protocol_name
+                0x0000000000000794                la_sample_tick
+                0x00000000000007c8                la_decode_uart
+                0x000000000000113c                la_decode_i2c
+                0x0000000000001580                la_decode_spi
+                0x0000000000001a50                la_decode_candidate
+                0x0000000000001aa0                la_identify
+ .text          0x0000000000001e80      0x1a8 ./src/main.o
+ .text.startup  0x0000000000002028      0xcb0 ./src/main.o
+                0x0000000000002028                main
+ .text          0x0000000000002cd8      0x2c8 ./src/tft.o
+                0x0000000000002d20                tft_init
+                0x0000000000002d7c                tft_present
+                0x0000000000002ef0                tft_color_test
+ .text          0x0000000000002fa0      0x2ec ./src/tinyfmt.o
+                0x0000000000002fd0                la_snprintf
+ .text          0x000000000000328c     0x1018 ./src/ui.o
+                0x0000000000003440                ui_defaults
+                0x00000000000034a4                ui_render
+                0x0000000000003eac                ui_short
+                0x000000000000428c                ui_back
+ .text          0x00000000000042a4        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .text          0x00000000000042a4        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+ .text          0x00000000000042a4        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(translation_table.o)
+ .text          0x00000000000042a4       0x78 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+                0x00000000000042a4                FIQInterrupt
+                0x00000000000042b8                IRQInterrupt
+                0x00000000000042cc                UndefinedException
+                0x00000000000042e0                SWInterrupt
+                0x00000000000042f4                DataAbortInterrupt
+                0x0000000000004308                PrefetchAbortInterrupt
+ .text          0x000000000000431c       0x78 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+                0x0000000000004330                _start
+ .text          0x0000000000004394      0x994 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+                0x00000000000043e8                Xil_DCacheInvalidateLine
+                0x0000000000004420                Xil_DCacheInvalidateRange
+                0x0000000000004508                Xil_DCacheFlushLine
+                0x0000000000004554                Xil_DCacheFlushRange
+                0x00000000000045a8                Xil_DCacheStoreLine
+                0x00000000000045e0                Xil_ICacheDisable
+                0x0000000000004618                Xil_ICacheInvalidateLine
+                0x0000000000004650                Xil_ICacheInvalidateRange
+                0x00000000000046a8                Xil_L1DCacheInvalidate
+                0x0000000000004760                Xil_L1DCacheEnable
+                0x0000000000004780                Xil_L1DCacheInvalidateLine
+                0x0000000000004798                Xil_L1DCacheInvalidateRange
+                0x00000000000047e0                Xil_L1DCacheFlush
+                0x0000000000004870                Xil_L1DCacheDisable
+                0x0000000000004888                Xil_DCacheFlush
+                0x00000000000048e4                Xil_DCacheDisable
+                0x0000000000004914                Xil_L1DCacheFlushLine
+                0x000000000000492c                Xil_L1DCacheFlushRange
+                0x0000000000004974                Xil_L1DCacheStoreLine
+                0x000000000000498c                Xil_L1ICacheEnable
+                0x00000000000049a8                Xil_L1ICacheDisable
+                0x00000000000049c4                Xil_L1ICacheInvalidate
+                0x00000000000049dc                Xil_L1ICacheInvalidateLine
+                0x00000000000049f4                Xil_L1ICacheInvalidateRange
+                0x0000000000004a3c                Xil_L2CacheDisable
+                0x0000000000004a54                Xil_L2CacheInvalidate
+                0x0000000000004ac0                Xil_DCacheInvalidate
+                0x0000000000004ae0                Xil_ICacheInvalidate
+                0x0000000000004b68                Xil_L2CacheEnable
+                0x0000000000004b80                Xil_DCacheEnable
+                0x0000000000004ba4                Xil_ICacheEnable
+                0x0000000000004bd4                Xil_L2CacheInvalidateLine
+                0x0000000000004be8                Xil_L2CacheInvalidateRange
+                0x0000000000004c50                Xil_L2CacheFlush
+                0x0000000000004c94                Xil_L2CacheFlushLine
+                0x0000000000004cac                Xil_L2CacheFlushRange
+                0x0000000000004d14                Xil_L2CacheStoreLine
+ .text          0x0000000000004d28       0x70 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+                0x0000000000004d2c                Xil_DataAbortHandler
+                0x0000000000004d30                Xil_PrefetchAbortHandler
+                0x0000000000004d34                Xil_UndefinedExceptionHandler
+                0x0000000000004d38                Xil_ExceptionInit
+                0x0000000000004d3c                Xil_ExceptionRegisterHandler
+                0x0000000000004d54                Xil_GetExceptionRegisterHandler
+                0x0000000000004d74                Xil_ExceptionRemoveHandler
+ .text          0x0000000000004d98      0x67c ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+                0x0000000000004f98                xil_printf
+ .text          0x0000000000005414        0x8 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+                0x0000000000005414                sleep
+                0x0000000000005418                usleep
+ .text          0x000000000000541c       0x4c ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+                0x000000000000541c                XTime_SetTime
+                0x0000000000005440                XTime_GetTime
+ .text          0x0000000000005468       0x3c ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+                0x0000000000005468                __cpu_init
+ .text          0x00000000000054a4       0x10 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+                0x00000000000054a4                outbyte
+ .text          0x00000000000054b4       0x48 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+                0x00000000000054b4                sleep_A9
+ .text          0x00000000000054fc       0x44 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+                0x00000000000054fc                usleep_A9
+ .text          0x0000000000005540       0x34 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+                0x0000000000005540                XUartLite_SendByte
+                0x0000000000005558                XUartLite_RecvByte
+ .text          0x0000000000005574      0x20c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+                0x0000000000005574                __aeabi_uidiv
+                0x0000000000005574                __udivsi3
+                0x0000000000005760                __aeabi_uidivmod
+ .text          0x0000000000005780      0x240 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+                0x0000000000005780                __divsi3
+                0x0000000000005780                __aeabi_idiv
+                0x00000000000059a0                __aeabi_idivmod
+ .text          0x00000000000059c0        0x4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+                0x00000000000059c0                __aeabi_idiv0
+                0x00000000000059c0                __aeabi_ldiv0
+ .text          0x00000000000059c4       0xd4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_ldivmod.o)
+                0x00000000000059c4                __aeabi_ldivmod
+ .text          0x0000000000005a98       0x3c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x0000000000005a98                __aeabi_uldivmod
+ .text          0x0000000000005ad4      0x124 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+                0x0000000000005ad4                __udivmoddi4
+ .text          0x0000000000005bf8       0x18 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+                0x0000000000005bf8                __set_ctype
+ .text          0x0000000000005c10       0x34 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+                0x0000000000005c10                exit
+ .text          0x0000000000005c44       0x40 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+                0x0000000000005c44                __libc_fini_array
+ .text          0x0000000000005c84        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .text          0x0000000000005c84       0x74 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+                0x0000000000005c84                __libc_init_array
+ .text          0x0000000000005cf8       0xfc e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+                0x0000000000005cf8                memcmp
+ *fill*         0x0000000000005df4        0xc 
+ .text          0x0000000000005e00      0x5e0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+                0x0000000000005e00                memcpy
+ .text          0x00000000000063e0      0x110 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+                0x00000000000063e0                memset
+ .text          0x00000000000064f0      0x188 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+                0x00000000000064f0                strchr
+ *fill*         0x0000000000006678        0x8 
+ .text          0x0000000000006680      0x2dc e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+                0x0000000000006688                strcmp
+ *fill*         0x000000000000695c       0x24 
+ .text          0x0000000000006980       0xdc e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+                0x0000000000006980                strlen
+ .text          0x0000000000006a5c       0x18 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+                0x0000000000006a5c                strtok
+ .text          0x0000000000006a74       0xc8 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+                0x0000000000006a74                __strtok_r
+                0x0000000000006b34                strtok_r
+ .text          0x0000000000006b3c      0x164 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+                0x0000000000006b3c                __call_exitprocs
+ .text          0x0000000000006ca0        0x4 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+                0x0000000000006ca0                _exit
+ .text          0x0000000000006ca4        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtend.o
+ .text          0x0000000000006ca4        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtn.o
+ *(.plt)
+ *(.gnu.warning)
+ *(.gcc_execpt_table)
+ *(.glue_7)
+ .glue_7        0x0000000000006ca4        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0000000000006ca4        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000006ca4        0x0
+ .vfp11_veneer  0x0000000000006ca4        0x0 linker stubs
+
+.v4_bx          0x0000000000006ca4        0x0
+ .v4_bx         0x0000000000006ca4        0x0 linker stubs
+
+.iplt           0x0000000000006ca4        0x0
+ .iplt          0x0000000000006ca4        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+
+.init           0x0000000000006ca4       0x18
+ *(.init)
+ .init          0x0000000000006ca4        0xc e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crti.o
+                0x0000000000006ca4                _init
+ .init          0x0000000000006cb0        0xc e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtn.o
+
+.fini           0x0000000000006cbc       0x18
+ *(.fini)
+ .fini          0x0000000000006cbc        0xc e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crti.o
+                0x0000000000006cbc                _fini
+ .fini          0x0000000000006cc8        0xc e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtn.o
+
+.rodata         0x0000000000006cd4      0xa38
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000006cd4       0x34 ./src/la.o
+ .rodata.str1.1
+                0x0000000000006d08       0x14 ./src/la.o
+ .rodata.str1.1
+                0x0000000000006d1c      0x3a5 ./src/main.o
+                                        0x3a8 (size before relaxing)
+ *fill*         0x00000000000070c1        0x1 
+ .rodata        0x00000000000070c2        0x8 ./src/tft.o
+ .rodata.str1.1
+                0x00000000000070ca       0x22 ./src/tinyfmt.o
+                                         0x24 (size before relaxing)
+ .rodata        0x00000000000070ec      0x238 ./src/ui.o
+ .rodata.str1.1
+                0x0000000000007324      0x2c7 ./src/ui.o
+                                        0x2e2 (size before relaxing)
+ *fill*         0x00000000000075eb        0x1 
+ .rodata.str1.4
+                0x00000000000075ec       0x11 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ *fill*         0x00000000000075fd        0x3 
+ .rodata        0x0000000000007600      0x101 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+                0x0000000000007600                _ctype_
+ *fill*         0x0000000000007701        0x3 
+ .rodata        0x0000000000007704        0x4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                0x0000000000007704                _global_impure_ptr
+ .rodata.str1.4
+                0x0000000000007708        0x4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                                          0x2 (size before relaxing)
+
+.eh_frame       0x000000000000770c        0x4
+ .eh_frame      0x000000000000770c        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+ .eh_frame      0x000000000000770c        0x4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtend.o
+
+.sdata2         0x0000000000007710        0x0
+                0x0000000000007710                __sdata2_start = .
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000007710                __sdata2_end = .
+
+.sbss2          0x0000000000007710        0x0
+                0x0000000000007710                __sbss2_start = .
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+                0x0000000000007710                __sbss2_end = .
+
+.data           0x0000000000007710      0x478
+                0x0000000000007710                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000007710        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crti.o
+ .data          0x0000000000007710        0x4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+                0x0000000000007710                __dso_handle
+ .data          0x0000000000007714        0x0 ./src/la.o
+ .data          0x0000000000007714        0x0 ./src/main.o
+ .data          0x0000000000007714        0x4 ./src/tft.o
+ .data          0x0000000000007718        0x0 ./src/tinyfmt.o
+ .data          0x0000000000007718        0x0 ./src/ui.o
+ .data          0x0000000000007718        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .data          0x0000000000007718        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+ .data          0x0000000000007718        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(translation_table.o)
+ .data          0x0000000000007718        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .data          0x0000000000007718        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+ .data          0x0000000000007718        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .data          0x0000000000007718       0x38 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+                0x0000000000007718                XExc_VectorTable
+ .data          0x0000000000007750        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .data          0x0000000000007750        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .data          0x0000000000007750        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .data          0x0000000000007750        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+ .data          0x0000000000007750        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .data          0x0000000000007750        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .data          0x0000000000007750        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .data          0x0000000000007750        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .data          0x0000000000007750        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+ .data          0x0000000000007750        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+ .data          0x0000000000007750        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000007750        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_ldivmod.o)
+ .data          0x0000000000007750        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x0000000000007750        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ .data          0x0000000000007750        0x4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+                0x0000000000007750                __ctype_ptr__
+ .data          0x0000000000007754        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .data          0x0000000000007754        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ *fill*         0x0000000000007754        0x4 
+ .data          0x0000000000007758      0x430 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                0x0000000000007758                _impure_ptr
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000007b88        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtend.o
+ .data          0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtn.o
+ *(.jcr)
+ *(.got .got.*)
+                0x0000000000007b88                __data_end = .
+
+.tm_clone_table
+                0x0000000000007b88        0x0
+ .tm_clone_table
+                0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+ .tm_clone_table
+                0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtend.o
+
+.igot.plt       0x0000000000007b88        0x0
+ .igot.plt      0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+
+.got2           0x0000000000007b88        0x0
+ .got2          0x0000000000007b88        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+
+.ctors          0x0000000000007b88        0x0
+                0x0000000000007b88                __CTOR_LIST__ = .
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x0000000000007b88                __CTOR_END__ = .
+
+.dtors          0x0000000000007b88        0x0
+                0x0000000000007b88                __DTOR_LIST__ = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x0000000000007b88                __DTOR_END__ = .
+
+.ARM.extab      0x0000000000007b88        0x0
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab     0x0000000000007b88        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+
+.ARM.exidx      0x0000000000007b88        0x8
+                0x0000000000007b88                __exidx_start = .
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0000000000007b88        0x8 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+                0x0000000000007b90                __exidx_end = .
+
+.preinit_array  0x0000000000007b90        0x0
+                0x0000000000007b90                __preinit_array_start = .
+ *(.preinit_array)
+                0x0000000000007b90                __preinit_array_end = .
+
+.init_array     0x0000000000007b90        0x4
+                0x0000000000007b90                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x0000000000007b90        0x4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+                0x0000000000007b94                __init_array_end = .
+
+.fini_array     0x0000000000007b94        0x4
+                0x0000000000007b94                __fini_array_start = .
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x0000000000007b94        0x4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+                0x0000000000007b98                __fini_array_end = .
+
+.mmu_tbl        0x0000000000008000     0x4000
+                0x0000000000008000                __mmu_tbl_start = .
+ *(.mmu_tbl)
+ .mmu_tbl       0x0000000000008000     0x4000 ../../bsp/ps7_cortexa9_0/lib\libxil.a(translation_table.o)
+                0x0000000000008000                MMUTable
+                0x000000000000c000                __mmu_tbl_end = .
+
+.rel.dyn        0x000000000000c000        0x0
+ .rel.iplt      0x000000000000c000        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+
+.sdata          0x000000000000c000        0x0
+                0x000000000000c000                __sdata_start = .
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0x000000000000c000                __sdata_end = .
+
+.sbss           0x000000000000c000        0x0
+                0x000000000000c000                __sbss_start = .
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+                0x000000000000c000                __sbss_end = .
+
+.bss            0x000000000000c000    0x18a74
+                0x000000000000c000                . = ALIGN (0x4)
+                0x000000000000c000                __bss_start = .
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000000c000        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crti.o
+ .bss           0x000000000000c000       0x1c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+ .bss           0x000000000000c01c        0x0 ./src/la.o
+ *fill*         0x000000000000c01c        0x4 
+ .bss           0x000000000000c020     0x8a48 ./src/main.o
+ .bss           0x0000000000014a68     0x8000 ./src/tft.o
+ .bss           0x000000000001ca68        0x0 ./src/tinyfmt.o
+ .bss           0x000000000001ca68        0x0 ./src/ui.o
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(translation_table.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_ldivmod.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .bss           0x000000000001ca68        0x0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtend.o
+ .bss           0x000000000001ca68        0x0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtn.o
+ *(COMMON)
+ COMMON         0x000000000001ca68     0x8000 ./src/ui.o
+                0x000000000001ca68                ui_pixels
+ COMMON         0x0000000000024a68        0xc ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+                0x0000000000024a68                UndefinedExceptionAddr
+                0x0000000000024a6c                PrefetchAbortAddr
+                0x0000000000024a70                DataAbortAddr
+                0x0000000000024a74                . = ALIGN (0x4)
+                0x0000000000024a74                __bss_end = .
+                0x000000000000c000                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
+                0x0000000000007710                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+
+.heap           0x0000000000024a74     0x100c
+                0x0000000000024a80                . = ALIGN (0x10)
+ *fill*         0x0000000000024a74        0xc 
+                0x0000000000024a80                _heap = .
+                0x0000000000024a80                HeapBase = .
+                0x0000000000024a80                _heap_start = .
+                0x0000000000025a80                . = (. + _HEAP_SIZE)
+ *fill*         0x0000000000024a80     0x1000 
+                0x0000000000025a80                _heap_end = .
+                0x0000000000025a80                HeapLimit = .
+
+.stack          0x0000000000025a80     0x5800
+                0x0000000000025a80                . = ALIGN (0x10)
+                0x0000000000025a80                _stack_end = .
+                0x0000000000029a80                . = (. + _STACK_SIZE)
+ *fill*         0x0000000000025a80     0x4000 
+                0x0000000000029a80                _stack = .
+                0x0000000000029a80                __stack = .
+                0x0000000000029a80                . = ALIGN (0x10)
+                0x0000000000029a80                _irq_stack_end = .
+                0x0000000000029e80                . = (. + _IRQ_STACK_SIZE)
+ *fill*         0x0000000000029a80      0x400 
+                0x0000000000029e80                __irq_stack = .
+                0x0000000000029e80                _supervisor_stack_end = .
+                0x000000000002a680                . = (. + _SUPERVISOR_STACK_SIZE)
+ *fill*         0x0000000000029e80      0x800 
+                0x000000000002a680                __supervisor_stack = .
+                0x000000000002a680                _abort_stack_end = .
+                0x000000000002aa80                . = (. + _ABORT_STACK_SIZE)
+ *fill*         0x000000000002a680      0x400 
+                0x000000000002aa80                __abort_stack = .
+                0x000000000002aa80                _fiq_stack_end = .
+                0x000000000002ae80                . = (. + _FIQ_STACK_SIZE)
+ *fill*         0x000000000002aa80      0x400 
+                0x000000000002ae80                __fiq_stack = .
+                0x000000000002ae80                _undef_stack_end = .
+                0x000000000002b280                . = (. + _UNDEF_STACK_SIZE)
+ *fill*         0x000000000002ae80      0x400 
+                0x000000000002b280                __undef_stack = .
+                0x000000000002b280                _end = .
+                0x000000000002b280                end = .
+LOAD ./src/la.o
+LOAD ./src/main.o
+LOAD ./src/tft.o
+LOAD ./src/tinyfmt.o
+LOAD ./src/ui.o
+START GROUP
+LOAD ../../bsp/ps7_cortexa9_0/lib\libxil.a
+LOAD e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a
+LOAD e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a
+END GROUP
+START GROUP
+LOAD e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a
+LOAD e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a
+END GROUP
+LOAD e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtend.o
+LOAD e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtn.o
+OUTPUT(analyzer.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x33
+ .ARM.attributes
+                0x0000000000000000       0x21 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crti.o
+ .ARM.attributes
+                0x0000000000000021       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+ .ARM.attributes
+                0x0000000000000054       0x3d ./src/la.o
+ .ARM.attributes
+                0x0000000000000091       0x3d ./src/main.o
+ .ARM.attributes
+                0x00000000000000ce       0x3d ./src/tft.o
+ .ARM.attributes
+                0x000000000000010b       0x3d ./src/tinyfmt.o
+ .ARM.attributes
+                0x0000000000000148       0x3d ./src/ui.o
+ .ARM.attributes
+                0x0000000000000185       0x29 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .ARM.attributes
+                0x00000000000001ae       0x29 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+ .ARM.attributes
+                0x00000000000001d7       0x29 ../../bsp/ps7_cortexa9_0/lib\libxil.a(translation_table.o)
+ .ARM.attributes
+                0x0000000000000200       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .ARM.attributes
+                0x000000000000023d       0x29 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+ .ARM.attributes
+                0x0000000000000266       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .ARM.attributes
+                0x00000000000002a3       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .ARM.attributes
+                0x00000000000002e0       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .ARM.attributes
+                0x000000000000031d       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .ARM.attributes
+                0x000000000000035a       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .ARM.attributes
+                0x0000000000000397       0x29 ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+ .ARM.attributes
+                0x00000000000003c0       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .ARM.attributes
+                0x00000000000003fd       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .ARM.attributes
+                0x000000000000043a       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .ARM.attributes
+                0x0000000000000477       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .ARM.attributes
+                0x00000000000004b4       0x21 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000000000004d5       0x21 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000000000004f6       0x21 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000517       0x21 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_ldivmod.o)
+ .ARM.attributes
+                0x0000000000000538       0x21 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000000000000559       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000000000000058c       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x00000000000005bf       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000000000005f2       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x0000000000000625       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000658       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000000000000068b       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x00000000000006be       0x1b e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000000000006d9       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000000000070c       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .ARM.attributes
+                0x000000000000073f       0x1f e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x000000000000075e       0x1b e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000000000000779       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .ARM.attributes
+                0x00000000000007ac       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .ARM.attributes
+                0x00000000000007df       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x0000000000000812       0x3d ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+ .ARM.attributes
+                0x000000000000084f       0x33 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtend.o
+ .ARM.attributes
+                0x0000000000000882       0x21 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtn.o
+
+.comment        0x0000000000000000       0x31
+ .comment       0x0000000000000000       0x31 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtbegin.o
+                                         0x32 (size before relaxing)
+ .comment       0x0000000000000031       0x32 ./src/la.o
+ .comment       0x0000000000000031       0x32 ./src/main.o
+ .comment       0x0000000000000031       0x32 ./src/tft.o
+ .comment       0x0000000000000031       0x32 ./src/tinyfmt.o
+ .comment       0x0000000000000031       0x32 ./src/ui.o
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivmoddi4.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .comment       0x0000000000000031       0x32 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+ .comment       0x0000000000000031       0x32 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard/crtend.o
+
+.debug_line     0x0000000000000000     0x36ad
+ .debug_line    0x0000000000000000       0x90 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .debug_line    0x0000000000000090      0x13e ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+ .debug_line    0x00000000000001ce      0x154 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .debug_line    0x0000000000000322       0x55 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+ .debug_line    0x0000000000000377      0x6e4 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .debug_line    0x0000000000000a5b      0x170 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .debug_line    0x0000000000000bcb      0x38e ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .debug_line    0x0000000000000f59      0x18c ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .debug_line    0x00000000000010e5      0x24e ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .debug_line    0x0000000000001333       0x48 ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+ .debug_line    0x000000000000137b      0x231 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .debug_line    0x00000000000015ac      0x218 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .debug_line    0x00000000000017c4      0x219 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .debug_line    0x00000000000019dd      0x26d ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .debug_line    0x0000000000001c4a      0x112 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+ .debug_line    0x0000000000001d5c      0x248 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .debug_line    0x0000000000001fa4      0x137 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .debug_line    0x00000000000020db      0x1a8 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000002283      0x150 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .debug_line    0x00000000000023d3      0x24f e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .debug_line    0x0000000000002622      0x1a7 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .debug_line    0x00000000000027c9      0x257 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .debug_line    0x0000000000002a20      0x267 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .debug_line    0x0000000000002c87      0x16e e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+ .debug_line    0x0000000000002df5       0xe6 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+ .debug_line    0x0000000000002edb      0x22d e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .debug_line    0x0000000000003108      0x269 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .debug_line    0x0000000000003371      0x293 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x0000000000003604       0xa9 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+
+.debug_info     0x0000000000000000     0xc51d
+ .debug_info    0x0000000000000000       0x26 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .debug_info    0x0000000000000026       0x26 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+ .debug_info    0x000000000000004c      0x198 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .debug_info    0x00000000000001e4       0x26 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+ .debug_info    0x000000000000020a     0x29cd ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .debug_info    0x0000000000002bd7      0x308 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .debug_info    0x0000000000002edf      0xe67 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .debug_info    0x0000000000003d46      0x927 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .debug_info    0x000000000000466d      0xb2d ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .debug_info    0x000000000000519a       0x26 ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+ .debug_info    0x00000000000051c0      0x935 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .debug_info    0x0000000000005af5      0x949 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .debug_info    0x000000000000643e      0x949 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .debug_info    0x0000000000006d87      0xa68 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .debug_info    0x00000000000077ef       0xea e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+ .debug_info    0x00000000000078d9      0x936 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .debug_info    0x000000000000820f       0xf3 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .debug_info    0x0000000000008302      0x89e e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .debug_info    0x0000000000008ba0      0x109 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .debug_info    0x0000000000008ca9      0x912 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .debug_info    0x00000000000095bb       0x26 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .debug_info    0x00000000000095e1      0x914 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .debug_info    0x0000000000009ef5      0x90a e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .debug_info    0x000000000000a7ff       0x26 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+ .debug_info    0x000000000000a825       0x26 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+ .debug_info    0x000000000000a84b      0x8f2 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .debug_info    0x000000000000b13d      0x97f e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .debug_info    0x000000000000babc      0x96f e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x000000000000c42b       0xf2 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+
+.debug_abbrev   0x0000000000000000     0x28bd
+ .debug_abbrev  0x0000000000000000       0x14 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .debug_abbrev  0x0000000000000014       0x14 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+ .debug_abbrev  0x0000000000000028       0xb4 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .debug_abbrev  0x00000000000000dc       0x14 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+ .debug_abbrev  0x00000000000000f0      0x438 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .debug_abbrev  0x0000000000000528      0x194 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .debug_abbrev  0x00000000000006bc      0x396 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .debug_abbrev  0x0000000000000a52      0x1df ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .debug_abbrev  0x0000000000000c31      0x264 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .debug_abbrev  0x0000000000000e95       0x14 ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+ .debug_abbrev  0x0000000000000ea9      0x1e0 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .debug_abbrev  0x0000000000001089      0x207 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .debug_abbrev  0x0000000000001290      0x207 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .debug_abbrev  0x0000000000001497      0x271 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .debug_abbrev  0x0000000000001708       0x8b e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+ .debug_abbrev  0x0000000000001793      0x1e7 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x000000000000197a       0xbd e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .debug_abbrev  0x0000000000001a37      0x189 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000001bc0       0xba e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .debug_abbrev  0x0000000000001c7a      0x1b4 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x0000000000001e2e       0x14 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000001e42      0x1cd e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .debug_abbrev  0x000000000000200f      0x1be e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .debug_abbrev  0x00000000000021cd       0x14 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+ .debug_abbrev  0x00000000000021e1       0x14 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00000000000021f5      0x1ee e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .debug_abbrev  0x00000000000023e3      0x22f e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .debug_abbrev  0x0000000000002612      0x230 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000002842       0x7b ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+
+.debug_aranges  0x0000000000000000      0x398
+ .debug_aranges
+                0x0000000000000000       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .debug_aranges
+                0x0000000000000020       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+ .debug_aranges
+                0x0000000000000040       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .debug_aranges
+                0x0000000000000060       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+ .debug_aranges
+                0x0000000000000080       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .debug_aranges
+                0x00000000000000a0       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .debug_aranges
+                0x0000000000000100       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .debug_aranges
+                0x0000000000000120       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+ .debug_aranges
+                0x0000000000000140       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .debug_aranges
+                0x0000000000000160       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .debug_aranges
+                0x0000000000000180       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .debug_aranges
+                0x00000000000001c0       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+ .debug_aranges
+                0x00000000000001e0       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x0000000000000200       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .debug_aranges
+                0x0000000000000220       0x18 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000238       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .debug_aranges
+                0x0000000000000258       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x0000000000000278       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x0000000000000298       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .debug_aranges
+                0x00000000000002b8       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .debug_aranges
+                0x00000000000002d8       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+ .debug_aranges
+                0x00000000000002f8       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000318       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .debug_aranges
+                0x0000000000000338       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .debug_aranges
+                0x0000000000000358       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x0000000000000378       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+
+.debug_str      0x0000000000000000     0x19bd
+ .debug_str     0x0000000000000000       0x57 ../../bsp/ps7_cortexa9_0/lib\libxil.a(asm_vectors.o)
+ .debug_str     0x0000000000000057        0x7 ../../bsp/ps7_cortexa9_0/lib\libxil.a(boot.o)
+                                         0x50 (size before relaxing)
+ .debug_str     0x000000000000005e      0x18a ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+                                        0x217 (size before relaxing)
+ .debug_str     0x00000000000001e8        0xb ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o)
+                                         0x54 (size before relaxing)
+ .debug_str     0x00000000000001f3      0x826 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+                                        0x9bb (size before relaxing)
+ .debug_str     0x0000000000000a19      0x137 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+                                        0x2e1 (size before relaxing)
+ .debug_str     0x0000000000000b50      0x11b ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+                                        0x67c (size before relaxing)
+ .debug_str     0x0000000000000c6b       0x2c ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+                                        0x549 (size before relaxing)
+ .debug_str     0x0000000000000c97       0x49 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+                                        0x5e4 (size before relaxing)
+ .debug_str     0x0000000000000ce0        0xb ../../bsp/ps7_cortexa9_0/lib\libxil.a(cpu_init.o)
+                                         0x54 (size before relaxing)
+ .debug_str     0x0000000000000ceb       0x1d ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+                                        0x571 (size before relaxing)
+ .debug_str     0x0000000000000d08        0xa ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+                                        0x551 (size before relaxing)
+ .debug_str     0x0000000000000d12        0x9 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+                                        0x554 (size before relaxing)
+ .debug_str     0x0000000000000d1b       0x70 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+                                        0x5e7 (size before relaxing)
+ .debug_str     0x0000000000000d8b      0x1af e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+                                        0x25a (size before relaxing)
+ .debug_str     0x0000000000000f3a      0x15c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+                                        0x65d (size before relaxing)
+ .debug_str     0x0000000000001096      0x14f e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+                                        0x275 (size before relaxing)
+ .debug_str     0x00000000000011e5      0x11c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-impure.o)
+                                        0x611 (size before relaxing)
+ .debug_str     0x0000000000001301       0xd0 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+                                        0x29f (size before relaxing)
+ .debug_str     0x00000000000013d1      0x119 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+                                        0x615 (size before relaxing)
+ .debug_str     0x00000000000014ea      0x123 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcpy.o)
+                                        0x131 (size before relaxing)
+ .debug_str     0x000000000000160d       0x89 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+                                        0x629 (size before relaxing)
+ .debug_str     0x0000000000001696       0x75 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+                                        0x620 (size before relaxing)
+ .debug_str     0x000000000000170b       0x79 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+                                        0x130 (size before relaxing)
+ .debug_str     0x0000000000001784       0x79 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strlen.o)
+                                        0x130 (size before relaxing)
+ .debug_str     0x00000000000017fd       0x80 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+                                        0x625 (size before relaxing)
+ .debug_str     0x000000000000187d       0x94 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+                                        0x647 (size before relaxing)
+ .debug_str     0x0000000000001911       0x96 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+                                        0x654 (size before relaxing)
+ .debug_str     0x00000000000019a7       0x16 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+                                        0x164 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x8f4
+ .debug_frame   0x0000000000000000       0x70 ../../bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+ .debug_frame   0x0000000000000070      0x300 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .debug_frame   0x0000000000000370       0x90 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .debug_frame   0x0000000000000400       0xbc ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .debug_frame   0x00000000000004bc       0x30 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .debug_frame   0x00000000000004ec       0x30 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .debug_frame   0x000000000000051c       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .debug_frame   0x000000000000053c       0x34 ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .debug_frame   0x0000000000000570       0x34 ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .debug_frame   0x00000000000005a4       0x30 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .debug_frame   0x00000000000005d4       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000000000005f4       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_divsi3.o)
+ .debug_frame   0x0000000000000614       0x44 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_ldivmod.o)
+ .debug_frame   0x0000000000000658       0x2c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/v7-a/fpv3/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000000000000684       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-ctype_.o)
+ .debug_frame   0x00000000000006a4       0x28 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .debug_frame   0x00000000000006cc       0x34 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000700       0x2c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .debug_frame   0x000000000000072c       0x40 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .debug_frame   0x000000000000076c       0x30 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .debug_frame   0x000000000000079c       0x34 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .debug_frame   0x00000000000007d0       0x68 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x0000000000000838       0x20 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .debug_frame   0x0000000000000858       0x3c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .debug_frame   0x0000000000000894       0x40 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000000000008d4       0x20 ../../bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+
+.debug_loc      0x0000000000000000     0x2be1
+ .debug_loc     0x0000000000000000     0x16da ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .debug_loc     0x00000000000016da       0x3f ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+ .debug_loc     0x0000000000001719      0x718 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .debug_loc     0x0000000000001e31       0x42 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_sleepcommon.o)
+ .debug_loc     0x0000000000001e73       0xf6 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .debug_loc     0x0000000000001f69       0x21 ../../bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+ .debug_loc     0x0000000000001f8a       0x1e ../../bsp/ps7_cortexa9_0/lib\libxil.a(sleep.o)
+ .debug_loc     0x0000000000001fa8       0x1e ../../bsp/ps7_cortexa9_0/lib\libxil.a(usleep.o)
+ .debug_loc     0x0000000000001fc6       0x5b ../../bsp/ps7_cortexa9_0/lib\libxil.a(xuartlite_l.o)
+ .debug_loc     0x0000000000002021       0x1e e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-exit.o)
+ .debug_loc     0x000000000000203f       0x5c e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fini.o)
+ .debug_loc     0x000000000000209b       0xa2 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-init.o)
+ .debug_loc     0x000000000000213d      0x2b6 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memcmp.o)
+ .debug_loc     0x00000000000023f3      0x1b3 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-memset.o)
+ .debug_loc     0x00000000000025a6      0x200 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strchr.o)
+ .debug_loc     0x00000000000027a6       0x42 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok.o)
+ .debug_loc     0x00000000000027e8      0x21f e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-strtok_r.o)
+ .debug_loc     0x0000000000002a07      0x1da e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)
+
+.debug_ranges   0x0000000000000000      0x2d8
+ .debug_ranges  0x0000000000000000      0x210 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_cache.o)
+ .debug_ranges  0x0000000000000210       0x68 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o)
+ .debug_ranges  0x0000000000000278       0x30 ../../bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+ .debug_ranges  0x00000000000002a8       0x30 e:/fpga/sdk/2018.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-__call_atexit.o)

@@ -1,0 +1,14 @@
+{
+  "firmware/src/la.c": "7fc1493ac299ec7cb45a98a1053b433ffdc3c1cfb16aef3bfafed7e315590c3a",
+  "firmware/src/main.c": "690f96f1e89773d676379419b582e521f8cd9c98e485e307c8989bca9e26c1a5",
+  "firmware/src/tft.c": "cdff3f63833d304a85a474d724d118a00b19e7d19eb4751c43d545952dceabcc",
+  "firmware/src/tinyfmt.c": "ff29306466c94bbb8a3ed3c1e50e5fe3027f168da0ffa8b6c299d598a09ae899",
+  "firmware/src/ui.c": "18acab787a957630443f8609bb6b6a26d4c6577b5abe674e7684b6ea2a93a572",
+  "firmware/include/board_config.h": "5066e25bfab2be27b25b6d1b8baf827c3572faf3556298008c09d472867cc3cf",
+  "firmware/include/la.h": "7084644dc522b2b2a0ea6baa70cd722c0ae4a36f84b0e0476560d539254fdfa6",
+  "firmware/include/la_regs.h": "7b129a31126d656c4b5ce59db8851ac3deef2a4ed9888baee8ba1397afb4d048",
+  "firmware/include/tft.h": "83b1d0fb641a06728c01cd5582caf0d1d94455c879c5a3e1bcd1fb277df0a115",
+  "firmware/include/tinyfmt.h": "7f885b262a0e5a1f4a1600ef505e99d7e94b03d5b6c37e51e541c5908438e8db",
+  "firmware/include/ui.h": "186fb3d7eea85d587efaa11b2649c0ede70ccaa50977505c9d991eff8d3154d5",
+  "firmware/lscript.ld": "5eb9ac6829118363a7663b93a4da5b392498c1a4fb55fec46e55ef25b55253f0"
+}

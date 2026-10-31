@@ -14,6 +14,8 @@ function Invoke-Checked([string]$program,[string[]]$arguments) {
 }
 Invoke-Checked $Gcc @('-std=c99','-O2','-Wall','-Wextra','-Werror','-I',"$root/firmware/include","$root/firmware/src/la.c","$root/firmware/src/ui.c","$root/firmware/src/tinyfmt.c","$root/tests/test_protocol.c",'-o',"$build/test_protocol.exe")
 Invoke-Checked "$build/test_protocol.exe" @('--ui',"$build/ui-")
+Invoke-Checked $Gcc @('-std=c99','-O2','-Wall','-Wextra','-Werror','-I',"$root/firmware/include","$root/firmware/src/la.c","$root/tests/test_uart_boundary.c",'-o',"$build/test_uart_boundary.exe")
+Invoke-Checked "$build/test_uart_boundary.exe" @()
 if(-not $HostOnly) {
     Push-Location $build
     try {
