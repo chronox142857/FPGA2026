@@ -12,7 +12,7 @@ AMD 初级组 / 正点原子领航者 ZYNQ7010 / Vivado + SDK 2018.2。
 
 ## 当前整合版
 
-本轮保存版本：`analyzer-selftest-20261031`，[程序、原始证据与恢复说明](releases/analyzer-selftest-20261031/README.md)。UART真实回接100次正常采集、8次错误停止位检查通过；SPI等待新增回接线，I2C等待上拉电阻。显示提速尚未开始。
+本轮程序版本：`analyzer-selftest-20261031`，[程序、UART原始证据与恢复说明](releases/analyzer-selftest-20261031/README.md)。UART真实回接100次正常采集、8次错误停止位检查通过；同一程序又完成SPI四模式×四档预触发×AUTO/手动共32组实物核对，[SPI证据标签spi-loopback-20261031](releases/spi-loopback-20261031/README.md)。I2C等待上拉电阻，显示提速尚未开始。
 
 版本标签`analyzer-st7735s-integrated-20261031`；[发布文件和恢复说明](releases/analyzer-st7735s-integrated-20261031/README.md)。保留已点亮的PL显示驱动，ARM负责采样读取、UART/I²C/SPI识别、四页界面和按键调度；显示初始化与PS复位隔离。KEY0短按切页，KEY1长按启动/取消采集，满屏刷新约1.2秒。测试源上电默认关闭，需要按接线文档回接后验证真实采集。
 

@@ -149,6 +149,9 @@ def verify(args, out, layout, symbols, elf_hash):
     check(first+trigger*10 == tick, "Timestamp/sample-index relationship failed")
     if args.protocol.startswith("uart"):
         check(samples[trigger] == 0 and (trigger == 0 or samples[trigger-1] == 1), "Falling-edge trigger mismatch")
+    elif args.protocol == "spi":
+        check(not(samples[trigger] & 8) and (trigger == 0 or (samples[trigger-1] & 8)),
+              "SPI CS falling-edge trigger mismatch")
     check(not any(v & ~regs[16] for v in samples), "Disabled channel contains data")
     proto = 1 if args.protocol.startswith("uart") else 2 if args.protocol == "i2c" else 3
     check(result[1] > 0 and result[layout["res_candidates"]] == proto and decoded[0] == proto,
@@ -197,6 +200,9 @@ def verify(args, out, layout, symbols, elf_hash):
         check(errors > 0 if args.protocol == "uart-error" else errors == 0, "UART frame-error count mismatch")
     spi_oracle = []
     if proto == 3:
+        truncated = [e for e in events if e["flags"] & 2]
+        check(errors == len(truncated) and all(e["type"] == 5 and e["end"] == len(samples)-1 for e in truncated),
+              "SPI errors include a malformed closed transaction, not only window-end truncation")
         # The source transmits two equal bytes per CS interval; each subsequent
         # transaction increments by 0x13. Inspect the physical lines using the
         # known source mode, independently of the ARM's preferred candidate.

@@ -1,0 +1,4 @@
+* -text -whitespace
+*.zip binary
+README.md text eol=lf whitespace
+.gitattributes text eol=lf whitespace
