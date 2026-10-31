@@ -1,0 +1,13 @@
+{
+  "status": "first independent SD cold boot verified",
+  "date": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "boot_sha256": "857c88573bd738ccbe17c9ef34cbe2df8b012ae5407ca8e580d948f7fd58fbff",
+  "read_only_log": "build/sd_boot/cold_check/20261031_170331_569427/status.log",
+  "log_sha256": "27db0de3b466de7fd452c6a08c000734ee8523fa733f20f7a8669df84eec7c2d",
+  "user_observation": "Clear text and KEY0 page switching after card insertion and power cycle",
+  "target_writes_during_verification": false,
+  "flash_programmed": false,
+  "repeat_cold_boots_tested": false,
+  "archived_read_only_log": "cold_boot_readonly.log"
+}

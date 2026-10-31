@@ -1,0 +1,29 @@
+{
+  "status": "first independent SD cold boot verified; clear display and KEY0 confirmed",
+  "device": "xc7z010clg400-1",
+  "static_verification": "header checksums, corrected FSBL, FPGA payload and OCM loader payload verified",
+  "fsbl_handoff_patch": {
+    "address": "0xe6e4",
+    "before": "0xeafffffe",
+    "after": "0xeaffcb25",
+    "target": "FsblHandoff at 0x00001380",
+    "file_offset": 124644,
+    "reason": "Vendor PL-only main waited after LoadBootImage instead of handing off"
+  },
+  "vendor_fsbl_source": "E:\\FPGAproject\\ZYNQ_7010_FPGA\\ZYNQ_7010_FPGA\\11_key_led\\zynq纯PL端固化脚本\\zynq_fsbl.elf",
+  "vendor_fsbl_sha256": "e69bc124d76f6eeecaebd1ff6a5fb354576f41937571d61b0c6458762a8eb569",
+  "analyzer_release": "analyzer-selftest-20261031",
+  "payload_bytes": 49152,
+  "trampoline_ddr_address": "0x00200000",
+  "analyzer_ocm_entry": "0x00000000",
+  "files": {
+    "fsbl_7010.elf": "c8410a00b8131e8ded429eec1a1d0b32aa93206921d28c54124141867961af4a",
+    "system.bit": "5a5ab497473bd2c398564e56c259ac9d310481d47916d911369a5ff6a4363a16",
+    "analyzer.elf": "7f78db8cf2852305b9eed6ad6f7f657b1fb02c0b58c62bafa363501b4177d4e8",
+    "ocm_loader.elf": "9f4f044e4b3c9ef39ff81e43dcb6f8cbb5708ba8d9e37440710bce1e9a27ce77",
+    "BOOT.bin": "857c88573bd738ccbe17c9ef34cbe2df8b012ae5407ca8e580d948f7fd58fbff"
+  },
+  "build_status": "built; cold boot not yet verified",
+  "cold_boot_evidence": "cold_validation.json",
+  "cold_boot_log": "cold_boot_readonly.log"
+}

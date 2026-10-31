@@ -1,0 +1,9 @@
+{
+  "drive": "D",
+  "filesystem": "FAT32",
+  "capacity": 31258771456,
+  "file": "D:\\BOOT.bin",
+  "bytes": 2237264,
+  "sha256": "857c88573bd738ccbe17c9ef34cbe2df8b012ae5407ca8e580d948f7fd58fbff",
+  "status": "copied and readback verified; cold boot pending"
+}
